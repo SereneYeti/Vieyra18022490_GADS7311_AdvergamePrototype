@@ -87,6 +87,7 @@ public class HandleQuestions : MonoBehaviour
         Option4.text = questions.allQuestions[starting][questionsAnswered].answers[3];
     }
 
+    
     public void Incorrect()
     {        
         Debug.Log("Incorrect! Correct Answer: " + questions.allQuestions[System.Convert.ToInt32(starting)][questionsAnswered].correctAnswer);

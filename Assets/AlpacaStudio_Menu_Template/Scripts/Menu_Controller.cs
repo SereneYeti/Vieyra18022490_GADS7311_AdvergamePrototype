@@ -26,7 +26,8 @@ public class Menu_Controller : MonoBehaviour {
 		}
 		
 		scene = UnityEngine.SceneManagement.SceneManager.GetActiveScene();
-		PlayerPrefs.SetString("_LastScene", scene.name.ToString()); 
+		if (scene.buildIndex != 0)
+			PlayerPrefs.SetString("_LastScene", scene.name.ToString()); 
 		//Debug.Log(scene.name);
 	}
 	
