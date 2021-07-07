@@ -25,10 +25,13 @@ public class PlayerData : MonoBehaviour
     #endregion
 
     public int numRight;
+    public float volume;
+    public float brightness;
     // Start is called before the first frame update
     void Start()
     {
-        
+        volume = 0;
+        brightness = 0;
     }
 
     // Update is called once per frame
